@@ -6,7 +6,7 @@ A simple command-line interface to get your location and weather information.
 
 - Node.js (version 14 or higher)
 - npm (version 6 or higher)
-- API key from OpenWeatherMap (sign up for free at ).
+- API key from OpenWeatherMap (sign up for free at **openweathermap.org** ).
 
 # Installation
 
@@ -30,7 +30,7 @@ A simple command-line interface to get your location and weather information.
 2. Once you press Enter, it will display your current temperature, humidity, and weather condition.
 3. ASCII art will be displayed based on the weather condition.
 
-# **_Note_**
+# **Note**
 
 - Make sure to replace your_api_key_here with your actual API key from OpenWeatherMap.
 - This project uses the retry-axios library to handle API request retries.
