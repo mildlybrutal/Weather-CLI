@@ -11,7 +11,7 @@ A simple command-line interface to get your location and weather information.
 # Installation
 
 - Clone the repository:
-```git clone https://github.com/your-username/WeatherCLI.git```
+```git clone https://github.com/mildlybrutal/WeatherCLI.git```
 - Navigate to the project directory:
 ```cd WeatherCLI```
 - Install dependencies:
