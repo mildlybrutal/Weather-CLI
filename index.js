@@ -30,12 +30,15 @@ rl.question("Press Enter to get your location and weather...", async () => {
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`,
     );
     const weatherData = weatherResponse.data;
-
+    const location = weatherData.name;
+    console.log(`You live in ${location}`);
     const temperature = weatherData.main.temp;
     const inCelcius = temperature - 273.15;
     const inFahrenheit = (temperature - 273.15) * 1.8 + 32;
-    console.log(`Current Temperature: ${inCelcius.toFixed(2)}°C`);
-    console.log(`Current Temperature: ${inFahrenheit.toFixed(2)}°F`);
+    console.log(`Current Temperature in Celcius: ${inCelcius.toFixed(2)}°C`);
+    console.log(
+      `Current Temperature in Fahrenheit: ${inFahrenheit.toFixed(2)}°F`,
+    );
 
     const clouds = weatherData.clouds?.all;
     if (clouds !== undefined) {
